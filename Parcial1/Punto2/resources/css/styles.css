@@ -1,0 +1,403 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Top Navbar */
+  .navbar-top {
+    background-color: #1e3a8a; /* Dark Blue */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  .navbar-brand .logo{
+    width: 300px;
+  height: 80px;
+  }
+  
+  
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-date {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+  
+  .button {
+    padding: 6px 12px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .outline-button:hover {
+    background-color: #1d4ed8; /* Lighter Blue */
+  }
+  
+  /* Bottom Navbar */
+  .navbar-bottom {
+    background-color: white;
+    height: 120px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  .navbar-bottom .logo {
+    width: 120px;
+    height: 100px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 6px;
+    /* margin-right: 10px; */
+  }
+  
+  .icon-button {
+    padding: 6px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .icon-button .icon{
+    margin : 0;
+  }
+  
+  /* Menu */
+  .navbar-menu {
+    background-color: #e5e7eb; /* Light Gray */
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  .navbar-menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    padding: 10px 16px;
+    cursor: pointer;
+  }
+  
+  .menu-item:hover {
+    background-color: #d1d5db; /* Hover Gray */
+  }
+  
+
+  
+  .icon-button{
+    background-color: #374151;
+  }
+
+
+
+
+/* Main contauiner */
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.image-container {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
+  display: flex;
+  align-items: center;
+}
+
+.overlay-content {
+  padding: 2rem;
+  max-width: 600px;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.sub-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: yellow;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #28a745;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: none;
+}
+
+.cta-button:hover {
+  background-color: #218838;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.quick-access-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
+.quick-access-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quick-access-item:hover {
+  border-color: #28a745;
+}
+
+.container .icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+/* footer */
+
+
+
+
+
+/* Footer Styles */
+.footer {
+  background-color: #16A34A;
+  color: #4B5563; /* Gray */
+  font-size: 14px;
+  padding: 10px 0 0 0;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  /* position: absolute; */
+}
+
+.footer-container {
+  max-width: 1280px;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  width: 100%;
+  max-width: 50%;
+  margin-bottom: 20px;
+}
+
+.footer-left h2 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.footer-left h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left a {
+  color: #2563EB; /* Blue */
+  text-decoration: none;
+}
+
+.footer-left a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  /* max-width: 50%; */
+}
+
+.sena-logo {
+  width: 100px;
+  height: 100px;
+}
+
+/* Social Icons and Certifications */
+.footer-social-certificates {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.certifications {
+  display: flex;
+  gap: 10px;
+}
+
+.certification-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: #2563EB;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #1E3A8A; /* Dark Blue */
+  color: white;
+  height: 100px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.gov-icon {
+  padding-left: 20px;
+  width: 300px;
+  height: 80px;
+}
+
+.co-icon {
+  width: 80px;
+  height: 80px;
+}
+
+
+.imagens{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagens .incontec-logo{
+  width: 75%;
+}
+
+
+
