@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register UTP</title>
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/register.css"> <!-- Añadir CSS específico para la página de login -->
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="resources/img/Logo_U.T.P.png" alt="Logo">
+                    <h1>Libreria UTP</h1>
+                </div>
+                <div class="header-buttons">
+                    <a href="index.html">
+                        <button class="btn btn-outline">Home</button>
+                    </a>
+                    <a href="login.html">
+                        <button class="btn btn-outline">Login</button>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="nav-links">
+                    <button>Noticias</button>
+                    <button>Libros</button>
+                </div>
+                <div class="nav-search">
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content-register">
+            <div class="card">
+                <div class="card-body">
+                    <div class="image-section">
+                        <img src="resources/img/PUBLI.png" alt="Library">
+                    </div>
+                    <div class="login-form">
+                        <div class="form-header">
+                            <p>¿Tienes cuenta?</p>
+                            <a href="login.html" class="button-register">
+                                <button class="btn btn-outline">Iniciar sesión</button>
+                            </a>
+                        </div>
+                        <div class="formulario">
+                            <form>
+                                <h3>Registrase</h3>
+
+                                <label for="username">Cedula</label>
+                                <input type="number" placeholder="Numero de cedula" id="cc">
+
+                                <label for="username">Nombre</label>
+                                <input type="text" placeholder="Nombre" id="name">
+
+                                <label for="username">Apellido</label>
+                                <input type="text" placeholder="Apellido" id="lastname">
+
+                                <label for="username">Fecha de nacimiento</label>
+                                <input type="date" placeholder="Fecha" id="Birth-date">
+                        
+                                <label for="username">Correo</label>
+                                <input type="text" placeholder="Correo electronico" id="username">
+                        
+                                <label for="password">Contraseña</label>
+                                <input type="password" placeholder="Password" id="password">
+                                
+                                <label for="password">Confirmar Contraseña</label>
+                                <input type="password" placeholder="Password" id="password">
+                                <br>
+                                <button type="submit">Log In</button>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>Realizado por Juan Manuel Morales y Juan Diego Rincón</p>
+        </footer>
+    </div>
+</body>
+</html>
