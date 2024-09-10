@@ -33,7 +33,7 @@
 
 .main-content-login .form-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -96,9 +96,13 @@
     width: 100%;
     background-color: #2964cf;
     color: #ffffff;
-    padding: 15px 0;
+    padding: 15px;
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.form-header p{
+    margin-right: 10px;
 }
