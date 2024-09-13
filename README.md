@@ -24,7 +24,7 @@ Aquí se encuentran todos los proyectos desarrollados durante el curso:
 Listado de tareas asignadas y completadas:
 
 1. [Taller 2: Introduccion a HTML ](Talleres/Taller2)
-2. [Taller 2: Introduccion a CSS ](Talleres/Taller3)
+2. [Taller 3: Introduccion a CSS ](Talleres/Taller3)
 
 ## Exámenes
 
