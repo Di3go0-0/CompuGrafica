@@ -23,8 +23,15 @@ Aquí se encuentran todos los proyectos desarrollados durante el curso:
 
 Listado de tareas asignadas y completadas:
 
-1. [Taller 2: Introduccion a HTML ](Talleres/Taller2)
-2. [Taller 3: Introduccion a CSS ](Talleres/Taller3)
+2. [Taller 2: Introduccion a HTML ](Talleres/Taller%202)
+3. [Taller 3: Introduccion a CSS ](Talleres/Taller%203/)
+4. [Taller 4: Fundamentos de JS ](Talleres/Taller%204/)
+
+Nota: para correr el Taller 4 se puede ejecutar 
+```bash
+npm run Taller4
+```
+
 
 ## Exámenes
 

@@ -1,0 +1,11 @@
+{
+  "name": "tu-proyecto",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "Taller4": "node Talleres/Taller\\ 4/main.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
