@@ -133,5 +133,40 @@ function dibujarGato() {
     dibujarLinea(500, 650, 650, 600, 'black'); // Cola del gato
 }
 
-// Llama a la función para dibujar el gato
-dibujarGato();
+
+function dibujarCorazon(x, y, tamano, color) {
+    let ancho = tamano / 2;
+    lienzo.beginPath();
+    lienzo.moveTo(x, y + ancho / 2);
+
+    // Parte izquierda del corazón
+    lienzo.bezierCurveTo(
+        x - ancho, y - ancho,  // Punto de control superior izquierdo
+        x - ancho * 1.5, y + ancho,  // Punto de control inferior izquierdo
+        x, y + ancho * 1.5    // Punto inferior del corazón
+    );
+
+    // Parte derecha del corazón
+    lienzo.bezierCurveTo(
+        x + ancho * 1.5, y + ancho,  // Punto de control inferior derecho
+        x + ancho, y - ancho,  // Punto de control superior derecho
+        x, y + ancho / 2    // Punto de unión superior
+    );
+
+    lienzo.fillStyle = color;
+    lienzo.fill();
+    lienzo.closePath();
+}
+
+function dibujarEscenaRomantica() {
+    // Fondo romántico de color suave
+    lienzo.fillStyle = "#ffe4e1"; // Rosa claro
+    lienzo.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Corazones separados
+    dibujarCorazon(300, 400, 150, 'red'); // Primer corazón más a la izquierda
+    dibujarCorazon(500, 400, 150, 'red'); // Segundo corazón más a la derecha
+}
+
+// Llama a la función para dibujar la escena romántica
+dibujarEscenaRomantica();
