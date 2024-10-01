@@ -105,6 +105,110 @@ class TallerV{
 let Punto3 = new TallerV()
 Punto1()
 
+function dibujarEstrella(cx, cy, radios, color) {
+    let rot = Math.PI / 2 * 3;
+    let x = cx;
+    let y = cy;
+    let step = Math.PI / 5;
+    lienzo.beginPath();
+    lienzo.moveTo(cx, cy - radios[0]);
+
+    for (let i = 0; i < 5; i++) {
+        x = cx + Math.cos(rot) * radios[0];
+        y = cy + Math.sin(rot) * radios[0];
+        lienzo.lineTo(x, y);
+        rot += step;
+
+        x = cx + Math.cos(rot) * radios[1];
+        y = cy + Math.sin(rot) * radios[1];
+        lienzo.lineTo(x, y);
+        rot += step;
+    }
+
+    lienzo.lineTo(cx, cy - radios[0]);
+    lienzo.closePath();
+    lienzo.strokeStyle = color;
+    lienzo.lineWidth = 2;
+    lienzo.stroke();
+}
+
+function dibujarPentagono(cx, cy, radio, color, fill = false) {
+    let rot = Math.PI / 2 * 3;
+    let x = cx;
+    let y = cy;
+    let step = Math.PI / 5;
+    lienzo.beginPath();
+    lienzo.moveTo(cx + Math.cos(rot) * radio, cy + Math.sin(rot) * radio);
+
+    for (let i = 0; i < 5; i++) {
+        x = cx + Math.cos(rot) * radio;
+        y = cy + Math.sin(rot) * radio;
+        lienzo.lineTo(x, y);
+        rot += step;
+    }
+
+    lienzo.closePath();
+    lienzo.strokeStyle = color;
+    lienzo.lineWidth = 2;
+    lienzo.stroke();
+    if (fill) {
+        lienzo.fillStyle = color;
+        lienzo.fill();
+    }
+}
+
+function dibujarElipse(x, y, radioX, radioY, color, fill = false) {
+    lienzo.beginPath();
+    lienzo.ellipse(x, y, radioX, radioY, 0, 0, 2 * Math.PI);
+    lienzo.strokeStyle = color;
+    lienzo.lineWidth = 2;
+    lienzo.stroke();
+    if (fill) {
+        lienzo.fillStyle = color;
+        lienzo.fill();
+    }
+}
+
+function dibujarRectangulo(x, y, ancho, alto, color, fill = false) {
+    lienzo.beginPath();
+    lienzo.rect(x, y, ancho, alto);
+    lienzo.strokeStyle = color;
+    lienzo.lineWidth = 2;
+    lienzo.stroke();
+    if (fill) {
+        lienzo.fillStyle = color;
+        lienzo.fill();
+    }
+}
+
+function dibujarLinea(x1, y1, x2, y2, color) {
+    lienzo.beginPath();
+    lienzo.moveTo(x1, y1);
+    lienzo.lineTo(x2, y2);
+    lienzo.strokeStyle = color;
+    lienzo.lineWidth = 2;
+    lienzo.stroke();
+}
+
+function Punto4() {
+    LimpiarCanvas();
+
+    // Dibujar una estrella
+    dibujarEstrella(400, 400, [150, 75], "gold");
+
+    // Dibujar un pentágono
+    dibujarPentagono(200, 200, 100, "blue", true);
+
+    // Dibujar un elipse
+    dibujarElipse(600, 200, 150, 75, "red", true);
+
+    // Dibujar un rectángulo
+    dibujarRectangulo(100, 100, 200, 150, "green", true);
+
+    // Dibujar una línea
+    dibujarLinea(50, 50, 300, 300, "black");
+}
+
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById("punto1").addEventListener("click", Punto1);
     document.getElementById("punto2").addEventListener("click", Punto2);
@@ -112,4 +216,5 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById("Rectangulo").addEventListener("click", Punto3.Rectangulo.bind(Punto3));
     document.getElementById("Trapecio").addEventListener("click", Punto3.Trapecio.bind(Punto3));
     document.getElementById("Hexagono").addEventListener("click", Punto3.Hexagono.bind(Punto3));
+    document.getElementById("punto4").addEventListener("click", Punto4);
 });
