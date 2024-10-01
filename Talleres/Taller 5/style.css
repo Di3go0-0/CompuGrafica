@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Estilos del navbar */
+  .navbar {
+    z-index: 1000; /* Para que el navbar esté por encima de los demás elementos */
+    background-color: #333; /* Color de fondo */
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos del menú */
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón */
+    border-radius: 4px;
+  }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the main container takes the full height of the viewport */
+}
+
+main #canvas {
+    width: 70vmin; /* Use vmin to ensure the canvas is square and responsive */
+    height: 70vmin; /* Use vmin to ensure the canvas is square and responsive */
+    border: solid 2px black;
+    
+}
+  
+ 
