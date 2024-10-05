@@ -6,7 +6,7 @@ import Punto4 from './Puntos/punto4.js';
 import Punto5 from './Puntos/punto5.js';
 import Punto6 from './Puntos/punto6.js';
 
-function mostrarMenu() {
+const mostrarMenu = () => {
     console.log('Seleccione una opción:');
     console.log('1. Punto 1');
     console.log('2. Punto 2');
@@ -17,7 +17,7 @@ function mostrarMenu() {
     console.log('7. Salir');
 }
 
-function ejecutarMenu() {
+const ejecutarMenu = () =>{
     let opcion = 0;
     while (opcion !== 7) {
         mostrarMenu();
