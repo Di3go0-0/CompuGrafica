@@ -1,6 +1,6 @@
 import readline from 'readline-sync';
 
-function Cadenas() {
+const Cadenas = () => {
     let cantidad = parseInt(readline.question('¿Cuántas cadenas va a introducir? '));
     while (isNaN(cantidad) || cantidad <= 0) {
         console.log('Por favor, introduzca un número válido mayor que 0.');
