@@ -1,5 +1,5 @@
 
-function multiplicationTable (Number, Limit) {
+const multiplicationTable = (Number, Limit) => {
     let table = [];
     for (let i = 1; i <= Limit; i++) {
         table.push(Number * i);
@@ -9,7 +9,7 @@ function multiplicationTable (Number, Limit) {
 
 // console.log(multiplicationTable(2, 4));
 
-function showMultiplicationTable(Number, Limit){
+const showMultiplicationTable = (Number, Limit) => {
     let table = multiplicationTable(Number, Limit);
     for (let i = 0; i < table.length; i++) {
         console.log(`${Number} X ${i + 1} = ${table[i]}`);
