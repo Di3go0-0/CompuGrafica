@@ -1,6 +1,6 @@
 import readline from 'readline-sync';
 
-function solicitarNumeros() {
+const solicitarNumeros = () => {
     let cantidad = parseInt(readline.question('¿Cuántos valores va a introducir? '));
     let sumatoria = 0;
     let anterior = null;
