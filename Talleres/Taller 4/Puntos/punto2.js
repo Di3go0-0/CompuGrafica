@@ -1,4 +1,4 @@
-function generateSpaces(N) {
+const generateSpaces = (N) => {
     const list = [];
     for (let i = 0; i < N; i++) {
         list.push(' ');
@@ -6,7 +6,7 @@ function generateSpaces(N) {
     return list;
 }
 
-function generateCaracteres(Number, caracter) {
+const generateCaracteres = (Number, caracter) => {
     const list = [];
     for (let i = 0; i < Number; i++) {
         list.push(caracter);
@@ -17,13 +17,13 @@ function generateCaracteres(Number, caracter) {
     return list;
 }
 
-function printThings(list) {
+const printThings = (list) => {
     for (let i = 0; i < list.length; i++) {
         process.stdout.write(list[i].toString());
     }
 }
 
-function mirrorPyramid(M, Caracter) {
+const mirrorPyramid = (M, Caracter) => {
     
     for (let i = 1; i <= M; i++) {
         printThings(generateSpaces(M - i));
