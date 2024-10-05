@@ -1,7 +1,7 @@
 const canvas = document.getElementById('canvas');
 let lienzo = canvas.getContext('2d');
 
-function dibujarLinea(xinicial, yinicial, xfinal, yfinal, color){
+const dibujarLinea = (xinicial, yinicial, xfinal, yfinal, color) => { 
     lienzo.beginPath();
     lienzo.strokeStyle = color;
     lienzo.lineWidth = 3;
@@ -14,7 +14,8 @@ function dibujarLinea(xinicial, yinicial, xfinal, yfinal, color){
 }
 
 
-function dibujarCirculo(x, y, radio, color) {
+
+const dibujarCirculo = (x, y, radio, color)  =>{
     lienzo.beginPath();
     lienzo.strokeStyle = color;
     lienzo.arc(x, y, radio, 0, 2 * Math.PI);
@@ -22,18 +23,18 @@ function dibujarCirculo(x, y, radio, color) {
     lienzo.closePath();
 }
 
-function LimpiarCanvas(){
+const LimpiarCanvas = () =>{
     lienzo.clearRect(0, 0, canvas.width, canvas.height);
 }
 
-function Punto1(){
+const Punto1 = () => {
     LimpiarCanvas()
     dibujarCirculo(250, 250, 250, "green")
     dibujarCirculo(550, 250, 250, "blue")
     dibujarCirculo(400, 550, 250, "red")
 }
 
-function Punto2(){
+const Punto2 = () => {
     LimpiarCanvas()
 
     dibujarLinea(400, 200, 0, 300, "blue")
@@ -105,7 +106,7 @@ class TallerV{
 let Punto3 = new TallerV()
 Punto1()
 
-function dibujarEstrella(cx, cy, radios, color) {
+const dibujarEstrella = (cx, cy, radios, color) => {
     let rot = Math.PI / 2 * 3;
     let x = cx;
     let y = cy;
@@ -132,7 +133,7 @@ function dibujarEstrella(cx, cy, radios, color) {
     lienzo.stroke();
 }
 
-function dibujarPentagono(cx, cy, radio, color, fill = false) {
+const dibujarPentagono = (cx, cy, radio, color, fill = false) => {
     let rot = Math.PI / 2 * 3;
     let x = cx;
     let y = cy;
@@ -157,7 +158,7 @@ function dibujarPentagono(cx, cy, radio, color, fill = false) {
     }
 }
 
-function dibujarElipse(x, y, radioX, radioY, color, fill = false) {
+const dibujarElipse = (x, y, radioX, radioY, color, fill = false)  => {
     lienzo.beginPath();
     lienzo.ellipse(x, y, radioX, radioY, 0, 0, 2 * Math.PI);
     lienzo.strokeStyle = color;
@@ -169,7 +170,7 @@ function dibujarElipse(x, y, radioX, radioY, color, fill = false) {
     }
 }
 
-function dibujarRectangulo(x, y, ancho, alto, color, fill = false) {
+const dibujarRectangulo = (x, y, ancho, alto, color, fill = false)  => {
     lienzo.beginPath();
     lienzo.rect(x, y, ancho, alto);
     lienzo.strokeStyle = color;
@@ -181,16 +182,8 @@ function dibujarRectangulo(x, y, ancho, alto, color, fill = false) {
     }
 }
 
-function dibujarLinea(x1, y1, x2, y2, color) {
-    lienzo.beginPath();
-    lienzo.moveTo(x1, y1);
-    lienzo.lineTo(x2, y2);
-    lienzo.strokeStyle = color;
-    lienzo.lineWidth = 2;
-    lienzo.stroke();
-}
 
-function Punto4() {
+const Punto4 = ()  => {
     LimpiarCanvas();
 
     // Dibujar una estrella
@@ -209,7 +202,11 @@ function Punto4() {
     dibujarLinea(50, 50, 300, 300, "black");
 }
 
+
+
+
 document.addEventListener('DOMContentLoaded', function(){
+    
     document.getElementById("punto1").addEventListener("click", Punto1);
     document.getElementById("punto2").addEventListener("click", Punto2);
     document.getElementById("Triangulo").addEventListener("click", Punto3.Triangulo.bind(Punto3));
