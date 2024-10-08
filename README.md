@@ -27,6 +27,7 @@ Listado de tareas asignadas y completadas:
 3. [Taller 3: Introduccion a CSS ](Talleres/Taller%203/)
 4. [Taller 4: Fundamentos de JS ](Talleres/Taller%204/)
 5. [Taller 5: Canvas](Talleres/Taller%205/)
+5. [Taller 6: Javascript](Talleres/Taller%206/)
 
 Nota: para correr el Taller 4 se puede ejecutar 
 ```bash
