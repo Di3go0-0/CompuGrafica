@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.navbar{
+  z-index: 1000;
+  background-color: #000000;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the main container takes the full height of the viewport */
+    weight: 100vh;
+}
+
+main #canvas {
+    width: 70vmin; /* Use vmin to ensure the canvas is square and responsive */
+    height: 70vmin; /* Use vmin to ensure the canvas is square and responsive */
+    border-left: solid 4px black;
+    border-bottom: solid 4px black;
+    border-right: solid 2px #333;
+    border-top: solid 2px #333;
+    
+}

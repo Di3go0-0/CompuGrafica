@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="Css/style.css" rel="stylesheet">
+  </head>
+  <body>
+   <header>
+      <nav class="navbar">
+        <div class="container"> 
+           <form id="coordinate-form">
+            <label for="coordinates">Introduce las coordenadas (x,y): </label>
+            <input type="text" id="coordinates" placeholder="Ej: 500,600" required>
+            <button type="submit">Dibujar</button>
+            <button type="button" id="clear">Limpiar</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <canvas 
+        id="canvas"
+        width="10000px"
+        height="10000px"
+      ></canvas>
+    </main>
+
+    <script src="Js/main.js"></script>     
+  
+  </body>
+</html>
