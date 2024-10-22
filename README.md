@@ -40,7 +40,7 @@ npm run Taller4
 Recopilación de exámenes y sus soluciones:
 
 1. [Examen 1: Diseño con HTML 5 y CSS 3](Parciales/Parcial1)
-2. [Examen 2: Canvas y diseño responsive](Parcailes/Parcial2)
+2. [Examen 2: Canvas y diseño responsive](Parciales/Parcial2)
 <!-- 1. [Examen 1: Diseño con HTML 5 y CSS 3](Parciales/Parcial1) -->
 
 ## Contacto
