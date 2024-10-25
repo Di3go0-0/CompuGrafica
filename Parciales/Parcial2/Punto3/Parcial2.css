@@ -1,33 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-img-top {
-    height: 200px;
-    object-fit: cover; 
+  height: 200px;
+  object-fit: cover;
 }
 
 .card-body {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
-.btn-outline-primary{
-    background-color: #242322;
-    color: white;
+.btn-outline-primary {
+  background-color: #242322;
+  color: white;
 }
 
-.btn-primary{
-    border: 2px solid #242322;
-    background-color: #242322;
-    color: white;
+.btn-primary {
+  border: 2px solid #242322;
+  background-color: #242322;
+  color: white;
 }
 
-.btn-primary:hover{
-    background-color: #3b3a38;
-    color:  white;
-    border: 2px solid #242322;
+.btn-primary:hover {
+  background-color: #3b3a38;
+  color: white;
+  border: 2px solid #242322;
 }
 
+/* Footer del sitio web */
 
+footer {
+  background-color: #f3f4f6;
+  padding: 1.5rem;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+.social-links a {
+  color: #4b5563;
+  transition: color 0.3s ease;
+}
+.social-links a:hover {
+  color: #2563eb;
+}
+.address {
+  display: flex;
+  align-items: center;
+  color: #4b5563;
+}
+.address svg {
+  margin-right: 0.5rem;
+}
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
