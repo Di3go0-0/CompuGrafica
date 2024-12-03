@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "project": "cd Project && node run.js",
     "Taller4": "node Talleres/Taller\\ 4/main.js",
     "Taller6": "node Talleres/Taller\\ 6/main.js"
   },
